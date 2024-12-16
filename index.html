@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Guess the Programming Language Game</title>
+    <style>
+        .hidden { display: none; }
+        .correct { background-color: green; color: white; }
+        .incorrect { background-color: red; color: white; }
+        .language-box { padding: 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Guess the Programming Language and its Color</h1>
+    <div id="languages">
+        <div class="language-box" style="background-color: blue;">Python</div>
+        <div class="language-box" style="background-color: yellow;">JavaScript</div>
+        <div class="language-box" style="background-color: purple;">Java</div>
+        <div class="language-box" style="background-color: rgb(151, 65, 4);">C</div>
+        <div class="language-box" style="background-color: rgb(235, 142, 233);">Ruby</div>
+        <div class="language-box" style="background-color: rgb(4, 125, 33);">C++</div>
+        <div class="language-box" style="background-color: rgb(125, 132, 126);">PHP</div>
+    </div>
+    <section>
+        <form id="guess-form" class="hidden">
+            <div>
+                <label for="proglang">Programming Language:</label>
+                <input id="proglang" type="text" required>
+            </div>
+            <div>
+                <label for="color">Color:</label>
+                <input id="color" type="text" required>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    <div id="result"></div>
+
+    <table id="results-table" border="1" class="hidden">
+        <thead>
+            <tr>
+                <th>Attempt Number</th>
+                <th>Programming Language</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <audio id="success-sound" src="success.mp3"></audio>
+    <audio id="failure-sound" src="failure.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
